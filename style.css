@@ -3,8 +3,7 @@ body {
     text-align: center ;
 }
 
-h1 {
-    
-    
-
+div.foto {
+    clip-path: circle(10%)
+   
 }
