@@ -1,9 +1,166 @@
-body {
-    background-color: aquamarine;
-    text-align: center ;
+@keyframes animacoes{
+    0%{box-shadow:0 0 25px #fff ;}
+    50%{box-shadow:0 0 10px #fff ;}
+    100%{box-shadow:0 0 25px #fff ;}
 }
 
-div.foto {
-    clip-path: circle(10%)
-   
+body {
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+
+.Titulo{
+    color: #fff;
+    width: 100%;
+    height: 500px;
+    background-position: right;
+    overflow: hidden;
+    background-image: url("img/Wall.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 25px;
+}
+ 
+.cont-titulo {
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 100%;
+    max-width: 500;
+    margin: 1px;
+    font-size: 20px;
+    position: absolute;
+}
+.cont-sobre{
+margin-left: 10px;
+
+}
+  
+.cont-img{
+    width: 14.5%;
+    height: 14.5%;
+    background-image: url(img/Wall.jpg);
+    border-radius: 50%;
+    border: solid #fff;
+    overflow: hidden;
+    background-attachment: fixed;
+    animation-name: animacoes;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    font-style: italic;
+    font-size:small;
+    justify-content:space-evenly;
+    text-align:center;
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    margin: 0px;
+       
+}
+.menu a{
+    position: relative;
+} 
+.menu a::after{
+    content: " ";
+    width: 0%;
+    height: 5%;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+
+}
+.Links{
+    width: 100%;
+    height: 50px;
+    background-image: url("img/Wall.jpg");
+    background-position: right top;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content:space-between;
+}
+a:link{
+    text-decoration: none;
+    color: #fff;
+
+}
+a:active{
+    text-decoration: none;
+    color: #fff;
+}
+a:visited{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover::after{
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo{
+    width: 30%;
+    height: 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section{
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-color: #fff;
+    background-size: cover;
+}
+
+/* */
+
+.Homepag{
+    background-color: aqua;
+
+}
+.Port{
+    background-color: blue;
+
+}
+footer{
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+
+}
+.WT{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+.fa-whatsapp{
+    margin-top: 16px;
+
 }
